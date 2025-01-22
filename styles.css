@@ -12,7 +12,7 @@
 }
 
 body {
-    background: var(--Slate-900);
+    background: var(--Yellow);
 }
 
 .big-container {
@@ -67,9 +67,27 @@ body {
     margin: 0;
     height: auto;
     color: var(--Gray-950);
+    text-decoration: none;
 }
 
-a {
+.h2 a:hover {
+    color: var(--Yellow);
+    text-decoration: none;
+}
+
+.h2 {
+    margin: 0;
+    height: auto;
+    color: var(--Gray-950);
+    text-decoration: none;
+}
+
+.h2 a {
+    color: var(--Gray-950);
+    text-decoration: none;
+}
+
+.h2 a:hover {
     color: var(--Yellow);
     text-decoration: none;
 }
