@@ -1,6 +1,6 @@
 :root {
     /** Colors **/
---Slate-900: hsl(47, 88%, 63%); /* Set base font yellow */
+--Yellow: hsl(47, 88%, 63%); /* Set base font yellow */
 --White: hsl(0, 0%, 100%); /* Set base font color white */
 
 --Slate-300: hsl(0, 0%, 42%); /* Set base font color light grey */
@@ -16,6 +16,8 @@ body {
 }
 
 .big-container {
+    display: flex;
+    flex-direction: column;
     width: 384px;
     padding: 1.5rem;
     background: var(--White);
@@ -24,6 +26,7 @@ body {
     box-shadow: 8px 8px 0px 0px #000;
     margin: 10rem auto;
     font-family: var(--font-family);
+    gap: 24px;
 }
 
 .img-container {
@@ -34,10 +37,56 @@ body {
 
 .img-container img {
     border-radius: 10px;
+    width: 100%;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 4px 12px;
+    gap: 12px;
+}
+
+.Learning-box {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--Yellow);
+    padding: 4px 12px;
+    gap: 8px;
+    border-radius: 4px;
+    margin: 0;
+}
+
+.Publish-date {
+    margin: 0;
+    width: auto;
+}
+
+.h2 {
+    margin: 0;
+    height: auto;
+    color: var(--Gray-950);
+}
+
+a {
+    color: var(--Yellow);
+    text-decoration: none;
+}
+
+.main-text {
+    margin: 0;
+    width: auto;
+    color: var(--Slate-300);
 }
 
 .Author-OP {
-    align-items: ;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 12px;
+    color: var(--Gray-950);
 }
 
 .attribution {
