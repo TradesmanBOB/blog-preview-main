@@ -6,9 +6,16 @@
 --Slate-300: hsl(0, 0%, 42%); /* Set base font color light grey */
 --Gray-950: hsl(00, 0%, 7%); /* Set base font color dark grey */
 
---font-size: 16px;        /* Set base font size */
+--font-size: 16px;  /* Set base font size */
+--font-weight: 500;
+--font-weight-1: 800;
 --font-family-1: 'Arial', sans-serif;  /* Set font family to Arial*/
 --font-family: 'Figtree'; /* Set font family to Figtree */
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -52,50 +59,45 @@ body {
     display: flex;
     flex-direction: row;
     background-color: var(--Yellow);
+    color: var(--Gray-950);
     padding: 4px 12px;
-    gap: 8px;
     border-radius: 4px;
     margin: 0;
+    row-gap: 8px;
+    max-width: fit-content;
 }
 
 .Publish-date {
     margin: 0;
     width: auto;
+    font-weight: 500;
 }
 
-.h2 {
+h2 {
     margin: 0;
     height: auto;
     color: var(--Gray-950);
     text-decoration: none;
+    padding: 0;
+    font-weight: 800;
 }
 
-.h2 a:hover {
+h2 a:hover {
     color: var(--Yellow);
     text-decoration: none;
 }
 
-.h2 {
-    margin: 0;
-    height: auto;
+
+h2 a {
     color: var(--Gray-950);
     text-decoration: none;
 }
 
-.h2 a {
-    color: var(--Gray-950);
-    text-decoration: none;
-}
-
-.h2 a:hover {
-    color: var(--Yellow);
-    text-decoration: none;
-}
-
-.main-text {
+.paragraph {
     margin: 0;
     width: auto;
     color: var(--Slate-300);
+    font-weight: 500;
 }
 
 .Author-OP {
@@ -113,4 +115,7 @@ body {
     margin-top: 20px;
     
 }
-.attribution a { color: hsl(228, 45%, 44%); }
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
