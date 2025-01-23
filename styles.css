@@ -77,18 +77,16 @@ h2 {
     margin: 0;
     height: auto;
     color: var(--Gray-950);
-    text-decoration: none;
     padding: 0;
     font-weight: 800;
 }
 
-h2 a:hover {
+a:hover {
     color: var(--Yellow);
-    text-decoration: none;
 }
 
 
-h2 a {
+a {
     color: var(--Gray-950);
     text-decoration: none;
 }
