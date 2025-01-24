@@ -1,16 +1,16 @@
 :root {
     /** Colors **/
---Yellow: hsl(47, 88%, 63%); /* Set base font yellow */
+--Black: hsl(0, 0%, 0%); /* Set base font yellow */
 --White: hsl(0, 0%, 100%); /* Set base font color white */
 
---Slate-300: hsl(0, 0%, 42%); /* Set base font color light grey */
+--Yellow: hsl(47, 88%, 63%); /* Set base font yellow */
+--Grey-300: hsl(0, 0%, 42%); /* Set base font color light grey */
 --Gray-950: hsl(00, 0%, 7%); /* Set base font color dark grey */
 
---font-size: 16px;  /* Set base font size */
---font-weight: 500;
---font-weight-1: 800;
---font-family-1: 'Arial', sans-serif;  /* Set font family to Arial*/
---font-family: 'Figtree'; /* Set font family to Figtree */
+--text-preset-3-bold: 800 14px 'Figtree', sans-serif;  /* Preset 3 Bold */
+--text-preset-1: 800 24px 'Figtree', sans-serif;  /* Preset 1 Bold */
+--text-preset-2: 500 16px 'Figtree', sans-serif;  /* Preset 2 Norm */
+--text-preset-3: 500 14px 'Figtree', sans-serif;  /* Preset 3 Norm */
 }
 
 * {
@@ -25,15 +25,14 @@ body {
 .big-container {
     display: flex;
     flex-direction: column;
-    width: 384px;
+    width: 24rem;
     padding: 1.5rem;
     background: var(--White);
-    border: 1px solid black;
-    border-radius: 20px;
-    box-shadow: 8px 8px 0px 0px #000;
+    border: 0.0625rem solid var(--Black);
+    border-radius: 1.25rem;
+    box-shadow: 0.5rem 0.5rem 0px 0px var(--Black);
     margin: 10rem auto;
-    font-family: var(--font-family);
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 .img-container {
@@ -43,7 +42,7 @@ body {
 }
 
 .img-container img {
-    border-radius: 10px;
+    border-radius: 0.625rem;
     width: 100%;
 }
 
@@ -51,66 +50,67 @@ body {
     display: flex;
     flex-direction: column;
     margin: 0;
-    padding: 4px 12px;
-    gap: 12px;
+    padding: 0.25rem 0.75rem;
+    gap: 0.75rem;
 }
 
 .Learning-box {
     display: flex;
-    flex-direction: row;
     background-color: var(--Yellow);
     color: var(--Gray-950);
-    padding: 4px 12px;
-    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.25rem;
     margin: 0;
-    row-gap: 8px;
+    row-gap: 0.5rem;
     max-width: fit-content;
+    font: var(--text-preset-3-bold);
 }
 
 .Publish-date {
     margin: 0;
     width: auto;
-    font-weight: 500;
+    font: var(--text-preset-3);
+    color: var(--Gray-950)
 }
 
 h2 {
     margin: 0;
     height: auto;
-    color: var(--Gray-950);
     padding: 0;
-    font-weight: 800;
+    font: var(--text-preset-1);
+}
+
+a {
+    color: var(--Gray-950); /* Your initial color */
+    text-decoration: none;
 }
 
 a:hover {
     color: var(--Yellow);
-}
-
-
-a {
-    color: var(--Gray-950);
     text-decoration: none;
 }
+
 
 .paragraph {
     margin: 0;
     width: auto;
-    color: var(--Slate-300);
-    font-weight: 500;
+    color: var(--Grey-300);
+    font: var(--text-preset-2);
 }
 
 .Author-OP {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 0px;
-    gap: 12px;
+    gap: 0.75rem;
     color: var(--Gray-950);
+    font: var(--text-preset-3-bold);
 }
 
 .attribution {
     font-size: 38px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     
 }
 
